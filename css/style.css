@@ -1,0 +1,143 @@
+
+* {
+    box-sizing: border-box;
+}
+
+.boot {
+    background: url('../images/background_nike.png') no-repeat;
+    padding: 109px 51px 100px 63px;
+    height: 600px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+
+.boot__container {
+    width: 686px;
+    height: 391px;
+    background-color: #202837;
+    border-radius: 10px;
+    box-shadow: 0 0 65px 0;
+    padding: 24px 21px;
+}
+
+
+.order__boot {
+    display: flex;
+}
+
+.image__boot {
+    width: 329px;
+    height: 159px;
+}
+
+.name__boot {
+    color: #e6e6e6; 
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+}
+
+.description__boot {
+    color: #e6e6e6; 
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.28px;
+}
+
+.form__boot__block {
+    margin-left: 80px;
+}
+
+.image__boot {
+  margin-left: 5px;
+  margin-top: 35px;
+}
+
+.checkboxes {
+    display: flex;
+    position: relative;
+}
+
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    display: none; 
+}
+
+label::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-image: url('../images/star.png');
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+    margin-right: 3px;
+    display: block;   
+}
+
+
+
+.gold__star__image {
+    width: 12px;
+    height: 12px;
+    display: block; 
+    margin-right: 3px;
+}
+
+.one__star__block {
+    position: absolute;
+    visibility: hidden;
+}
+
+#one__star:checked + .one__star__block {
+    visibility: visible;
+}
+
+.two__stars__block {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+}
+
+#two__stars:checked + .two__stars__block {
+    visibility: visible;
+    
+}
+
+.three__stars__block {
+    display: flex; 
+    position: absolute;
+    visibility: hidden;
+ 
+}
+
+#three__stars:checked + .three__stars__block {
+    visibility: visible;
+}
+
+.four__stars__block {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+  
+}
+
+#four__stars:checked + .four__stars__block {
+    visibility: visible;
+    
+}
+
+.five__stars__block {
+    display: flex;
+    position: absolute;
+    visibility: hidden;    
+}
+
+#five__stars:checked + .five__stars__block {
+    visibility: visible;
+}
+
+
